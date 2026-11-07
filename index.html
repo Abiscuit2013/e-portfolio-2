@@ -5,49 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Austin Bousquet</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/f981699c86.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f981699c86.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section id="landing-page">
-      <nav>
+    <nav>
+      <div class="nav__container">
         <figure>
           <img id="personal-logo" src="/assets/AB-logo-final.png" alt="" />
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
+            <a href="#" class="nav__link--anchor link__hover-effect">About</a>
           </li>
           <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            <a href="#" class="nav__link--anchor link__hover-effect"
               >Projects</a
             >
           </li>
           <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contact</a
-            >
+            <a href="#" class="nav__link--anchor link__hover-effect">Contact</a>
+          </li>
+
           <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-circle-half-stroke" id="dark-mode"></i></a>
+            <a href="#" class="nav__link--anchor link__hover-effect"
+              ><i class="fa-solid fa-circle-half-stroke" id="dark-mode"></i
+            ></a>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+    <section id="landing-page">
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey,</h1>
           <h1 class="title b__blue">I'm Austin.</h1>
-          <p class="header__para">I'm a <b class="b__blue">Frontend Software Developer</b> with a strong passion for building user friendly web applications and <b class="b__blue">problem solving.</b><br>
-          <br>Here's a bit more <b class="b__blue">about me.</b></p>
+          <p class="header__para">
+            I'm a <b class="b__blue">Frontend Software Developer</b> with a
+            strong passion for building user friendly web applications and
+            <b class="b__blue">problem solving.</b><br />
+            <br />Here's a bit more <b class="b__blue">about me.</b>
+          </p>
           <div class="social__list">
             <a href="" class="social__link link">
               <i class="fa-brands fa-linkedin-in social__link--icon click"></i>
@@ -61,9 +61,125 @@
       <button class="mail__btn click">
         <i class="fa-solid fa-envelope"></i>
       </button>
+
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
     </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my
+            <a
+              id="projects__direct"
+              href="#"
+              class="b__blue link__hover-effect"
+            >
+              projects</a
+            >
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/blinker mockup.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Project Name</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Project description here
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/blinker mockup.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Project Name</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Project description here
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="/assets/blinker mockup.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Project Name</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Project description here
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container__footer">
+        <div class="footer__row">
+          <figure>
+            <img
+              id="footer__personal-logo"
+              src="/assets/AB-logo-final.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a href="#" class="footer__social--link link__hover-effect">
+              Github
+            </a>
+            <a href="#" class="footer__social--link link__hover-effect">
+              LinkedIn
+            </a>
+            <a href="#" class="footer__social--link link__hover-effect">
+              Email
+            </a>
+            <a href="#" class="footer__social--link link__hover-effect">
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright ©2026 Austin Bousquet</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
