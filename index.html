@@ -9,12 +9,22 @@
       src="https://kit.fontawesome.com/f981699c86.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function () {
+      emailjs.init("6AyF1s0LHv1_AwkkJ");
+   })();
+</script>
   </head>
+
   <body>
     <nav>
       <div class="nav__container">
         <figure>
-          <img id="personal-logo" src="/assets/AB-logo-final.png" alt="" />
+          <img id="personal-logo" src="/assets/austin-logo-final.png" alt="" />
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
@@ -58,13 +68,73 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
 
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit <span class="b__blue">about me</span></h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+          <p class="modal__para">
+            I am a <b class="b__blue">frontend software developer,</b> but before anything else, I have always been a <b class="b__blue">problem solver.</b> <br>
+            I currently work on extremely difficult engineering problems and learn from a team consisting of some of the most <b class="b__blue">talented</b> and <b class="b__blue">experienced</b> software engineers every day.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <i class="fa-brands fa-html5 modal__language--i"></i>
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <i class="fa-brands fa-css3-alt modal__language--i"></i>
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <i class="fa-brands fa-js modal__language--i"></i>
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <i class="fa-brands fa-react modal__language--i"></i>
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm open to new opportunities!
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user__name" type="text"></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user__email" type="email"></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text"></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for reaching out. I look forward to speaking with you soon!
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit nav__link"></i>
+      </div>
     </section>
     <section id="projects">
       <div class="container">
@@ -159,7 +229,7 @@
           <figure>
             <img
               id="footer__personal-logo"
-              src="/assets/AB-logo-final.png"
+              src="/assets/austin-logo-final.png"
               alt=""
             />
           </figure>
