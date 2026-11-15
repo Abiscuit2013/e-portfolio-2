@@ -21,25 +21,26 @@
   </head>
 
   <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
     <nav>
       <div class="nav__container">
         <figure>
-          <img id="personal-logo" src="/assets/austin-logo-final.png" alt="" />
+          <img id="personal-logo" src="/assets/austin-logo-final.png" alt="">
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
-            <a href="#" class="nav__link--anchor link__hover-effect">About</a>
+            <a href="#" class="nav__link--anchor link__hover-effect" onclick="toggleModal()">About</a>
           </li>
           <li class="nav__link">
-            <a href="#" class="nav__link--anchor link__hover-effect"
+            <a href="#projects" class="nav__link--anchor link__hover-effect"
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a href="#" class="nav__link--anchor link__hover-effect">Contact</a>
           </li>
 
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleContrast()">
             <a href="#" class="nav__link--anchor link__hover-effect"
               ><i class="fa-solid fa-circle-half-stroke" id="dark-mode"></i
             ></a>
@@ -47,7 +48,7 @@
         </ul>
       </div>
     </nav>
-    <section id="landing-page">
+    
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey,</h1>
@@ -56,22 +57,23 @@
             I'm a <b class="b__blue">Frontend Software Developer</b> with a
             strong passion for building user friendly web applications and
             <b class="b__blue">problem solving.</b><br />
-            <br />Here's a bit more <b class="b__blue">about me.</b>
+            <br />Here's a bit more<b class="b__blue nav__link" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
-            <a href="" class="social__link link">
+            <a href="https://www.linkedin.com/in/austin-bousquet-64181a438" class="social__link link" target="_blank">
               <i class="fa-brands fa-linkedin-in social__link--icon click"></i>
             </a>
-            <a href="" class="social__link link">
+            <a href="https://github.com/Abiscuit2013?tab=repositories" class="social__link link" target="_blank">
               <i class="fa-brands fa-github social__link--icon click"></i>
             </a>
           </div>
         </div>
       </header>
+      <a href="#">
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
-
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -103,6 +105,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit nav__link" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat
           </h3>
@@ -132,9 +135,17 @@
           <div class="modal__overlay modal__overlay--success">
             Thanks for reaching out. I look forward to speaking with you soon!
           </div>
-        </div>
-        <i class="fas fa-times modal__exit nav__link"></i>
+        </div>       
       </div>
+      <img src="/assets/semi circle.svg" class="shape shape--0">
+      <img src="/assets/circle.svg" class="shape shape--1">
+      <img src="/assets/squiggly.svg" class="shape shape--2">
+      <img src="/assets/circle.svg" class="shape shape--3">
+      <img src="/assets/triangle.svg" class="shape shape--4">
+      <img src="/assets/circle.svg" class="shape shape--5">
+      <img src="/assets/squiggly.svg" class="shape shape--6">
+      <img src="/assets/circle.svg" class="shape shape--7">
+      <img src="/assets/semi circle.svg" class="shape shape--8">
     </section>
     <section id="projects">
       <div class="container">
@@ -234,13 +245,13 @@
             />
           </figure>
           <div class="footer__social--list">
-            <a href="#" class="footer__social--link link__hover-effect">
+            <a href="https://github.com/Abiscuit2013?tab=repositories" class="footer__social--link link__hover-effect" target="_blank">
               Github
             </a>
-            <a href="#" class="footer__social--link link__hover-effect">
+            <a href="https://www.linkedin.com/in/austin-bousquet-64181a438" class="footer__social--link link__hover-effect" target="_blank">
               LinkedIn
             </a>
-            <a href="#" class="footer__social--link link__hover-effect">
+            <a href="#" class="footer__social--link link__hover-effect" onclick="toggleModal()">
               Email
             </a>
             <a href="#" class="footer__social--link link__hover-effect">
